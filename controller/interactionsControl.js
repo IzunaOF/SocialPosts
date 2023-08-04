@@ -112,3 +112,4 @@ friendInteractionMenu.createAction({
 module.exports = {
     friendInteractionMenu,
 };
+

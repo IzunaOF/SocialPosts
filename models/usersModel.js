@@ -177,11 +177,11 @@ class User {
     }
 
     searchFriendsPosts() {
-        if (this.friends.length == 0)
-            return { postId: friendsPostsIds.set(-1, "noaction"), friends: userFriends.set(-1, "noaction") };
-
         const friendsPostsIds = new Map();
         const userFriends = new Map();
+
+        if (this.friends.length == 0)
+            return { postId: friendsPostsIds.set(-1, "noaction"), friends: userFriends.set(-1, "noaction") };
 
         for (let i = 0; i < this.friends.length; i++) {
             const friendPost = this.friends[i].posts;
