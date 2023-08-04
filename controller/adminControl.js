@@ -1,5 +1,4 @@
 const { getUserPrompt } = require("../models/getData");
-const { Adress, User } = require("../models/usersModel");
 const { MiniMenu, P } = require("../views/components/menus");
 
 const adminBoard = new MiniMenu();
